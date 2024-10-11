@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    cursor: url("image_site/bat_pixelart1.png"), 50px;
     font-family: 'Metal Mania', cursive;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -71,11 +72,13 @@ header p {
     margin: 14rem 0;
     transition: all 0.6s;
 }
+
 /*header buton üstüne gelinince*/
 .btn:hover {
     background-color: #000000;
     color: #c30000;
 }
+
 /*main başlık*/
 #section-a {
     background-color: #000000;
@@ -128,28 +131,27 @@ header p {
     color: white;
 }
 /*footer blokları*/
-#section-c, #section-d{
+#section-c, #section-d, #section-f{
     background-color: black;
     margin-inline: 50px;
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 15px;
 }
-
 /*footer başlıkları*/
-#section-c h2, #section-d h2 {
+#section-c h2, #section-d h2, #section-f h2 {
     padding: 1rem 0;
     padding-bottom: 0;
     font-size: 2.5rem;
     color: #ffffff;
     text-shadow: 1px 2px 1.5px rgba(248, 0, 0, 0.7)
 }
-/*info ve contact simgesi*/
-#info, #contact {
-    font-size: 20px;
+/*info, contact ve draw simgesi*/
+#info, #contact, #draw {
+    font-size: 15px;
     padding: 10px 0px;
     margin-bottom: 15px;
-    color: #640000;
+    color: #720000;
     text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.18);
 }
 /*music animasyonu*/
@@ -157,7 +159,7 @@ header p {
     width: 140px;
     height: 60px;
     margin: 10px;
-    position: absolute; left: 85%;
+    position: absolute; right: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -238,7 +240,7 @@ header p {
     animation-delay: 3.5s;
 }
 #spoty{
-    margin: 0px 20px 0px 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 #cat_gif{
@@ -341,9 +343,13 @@ header p {
         font-size: 45%;
     }
 
-    #section-c, #section-d{
+    #section-c, #section-d, #section-f{
         padding: 10px 100px;
         margin: 50px;
         display: inline-block;
+    }
+
+    #info, #contact, #draw {
+        font-size: 30px 
     }
 }
